@@ -20,4 +20,4 @@ Abra o `index.html` de cada exercício diretamente no navegador.
 
 ## Autor
 
-Luiz Olivieri — Análise e Desenvolvimento de Sistemas · ULIFE
+Luiz Olivieri — Análise e Desenvolvimento de Sistemas · USJT
