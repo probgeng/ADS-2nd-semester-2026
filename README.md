@@ -1,4 +1,4 @@
-# ADS — Exercícios JavaScript · 1º Semestre 2026
+# ADS — Exercícios JavaScript · 2º Semestre 2026
 
 Repositório com exercícios práticos da disciplina de Algoritmos e Estruturas de Dados, convertidos de Java para JavaScript com interface web.
 
