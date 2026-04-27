@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora de Notas</h1>
+      <p class="subtitle">
+        Insira as notas dos alunos e veja o resultado da turma.
+      </p>
+
+      <div class="legenda">
+        <span class="badge badge-cheat">-1 = Colando</span>
+        <span class="badge badge-zero">0 = Zerou</span>
+        <span class="badge badge-normal">1 a 10 = Nota normal</span>
+      </div>
+
+      <div class="input-area">
+        <input
+          type="number"
+          id="inputNota"
+          placeholder="Digite a nota"
+          min="-1"
+          max="10"
+          step="0.1"
+        />
+        <button id="btnAdicionar" onclick="adicionarNota()">Adicionar</button>
+        <button id="btnCalcular" onclick="calcularResultado()" class="btn-calcular">
+          Ver Resultado
+        </button>
+        <button id="btnReset" onclick="resetar()" class="btn-reset">
+          Reiniciar
+        </button>
+      </div>
+
+      <div id="listaNotas" class="lista-notas"></div>
+
+      <div id="resultado" class="resultado hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

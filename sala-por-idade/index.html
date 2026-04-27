@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identificador de Sala por Idade</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Identificador de Sala por Idade</h1>
+      <p class="subtitle">
+        Programa para identificar a sala por faixa etária.
+      </p>
+
+      <div class="tabela-faixas">
+        <div class="faixa"><span class="dot proibido"></span>Até 5 anos — Entrada Proibida</div>
+        <div class="faixa"><span class="dot crianca"></span>6 a 12 anos — Criança · Sala 01</div>
+        <div class="faixa"><span class="dot adolescente"></span>13 a 17 anos — Adolescente · Sala 02</div>
+        <div class="faixa"><span class="dot adulto"></span>18 a 59 anos — Adulto · Sala 03</div>
+        <div class="faixa"><span class="dot idoso"></span>60+ anos — Idoso · Sala 04</div>
+      </div>
+
+      <div class="input-area">
+        <input
+          type="number"
+          id="inputIdade"
+          placeholder="Digite a idade"
+          min="0"
+          max="150"
+        />
+        <button onclick="identificarSala()">Identificar</button>
+      </div>
+
+      <div id="resultado" class="resultado hidden"></div>
+
+      <div class="testes">
+        <h3>Testes Planejados (ULIFE)</h3>
+        <table>
+          <thead>
+            <tr><th>Entrada (idade)</th><th>Resultado Esperado</th><th>Status</th></tr>
+          </thead>
+          <tbody id="tabelaTestes">
+            <tr><td>5</td><td>Entrada Proibida</td><td id="t1">—</td></tr>
+            <tr><td>12</td><td>Criança - Sala 01</td><td id="t2">—</td></tr>
+            <tr><td>17</td><td>Adolecente Sala 02</td><td id="t3">—</td></tr>
+            <tr><td>59</td><td>Adulto - Sala 03</td><td id="t4">—</td></tr>
+            <tr><td>60</td><td>Idoso - Sala 04</td><td id="t5">—</td></tr>
+          </tbody>
+        </table>
+        <button class="btn-testes" onclick="executarTestes()">Executar Todos os Testes</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 36px 40px;
+  width: 100%;
+  max-width: 580px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #1a202c;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #718096;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.legenda {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.badge-cheat  { background: #fed7d7; color: #c53030; }
+.badge-zero   { background: #feebc8; color: #c05621; }
+.badge-normal { background: #c6f6d5; color: #276749; }
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2d3748;
+  transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #4299e1;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:active { transform: scale(0.97); }
+
+#btnAdicionar {
+  background: #4299e1;
+  color: white;
+}
+#btnAdicionar:hover { background: #3182ce; }
+
+.btn-calcular {
+  background: #48bb78;
+  color: white;
+}
+.btn-calcular:hover { background: #38a169; }
+
+.btn-reset {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+.btn-reset:hover { background: #cbd5e0; }
+
+.lista-notas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  min-height: 24px;
+}
+
+.nota-tag {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.nota-aprovado  { background: #c6f6d5; color: #276749; }
+.nota-reprovado { background: #bee3f8; color: #2b6cb0; }
+.nota-zerado    { background: #feebc8; color: #c05621; }
+.nota-colando   { background: #fed7d7; color: #c53030; }
+
+.resultado {
+  border-top: 2px solid #e2e8f0;
+  padding-top: 24px;
+}
+
+.resultado h2 {
+  font-size: 1.2rem;
+  color: #1a202c;
+  margin-bottom: 16px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.stat-card {
+  background: #f7fafc;
+  border-radius: 10px;
+  padding: 14px 16px;
+  border-left: 4px solid;
+}
+
+.stat-card.aprovado  { border-color: #48bb78; }
+.stat-card.reprovado { border-color: #4299e1; }
+.stat-card.zerado    { border-color: #ed8936; }
+.stat-card.colando   { border-color: #fc8181; }
+.stat-card.geral     { border-color: #a0aec0; grid-column: 1 / -1; }
+
+.stat-card h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #718096;
+  margin-bottom: 6px;
+  letter-spacing: 0.04em;
+}
+
+.stat-card .quantidade {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.stat-card .detalhe {
+  font-size: 0.82rem;
+  color: #718096;
+  margin-top: 2px;
+}
+
+.hidden { display: none; }
+
+.erro {
+  color: #c53030;
+  font-size: 0.85rem;
+  margin-top: -12px;
+  margin-bottom: 12px;
+}

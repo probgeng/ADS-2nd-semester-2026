@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 36px 40px;
+  width: 100%;
+  max-width: 560px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: #1a202c;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #718096;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.tabela-faixas {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.faixa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot.proibido     { background: #fc8181; }
+.dot.crianca      { background: #68d391; }
+.dot.adolescente  { background: #63b3ed; }
+.dot.adulto       { background: #f6ad55; }
+.dot.idoso        { background: #b794f4; }
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2d3748;
+  transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #4299e1;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #4299e1;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover   { background: #3182ce; }
+button:active  { transform: scale(0.97); }
+
+.resultado {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.resultado.proibido    { background: #fed7d7; color: #c53030; }
+.resultado.crianca     { background: #c6f6d5; color: #276749; }
+.resultado.adolescente { background: #bee3f8; color: #2b6cb0; }
+.resultado.adulto      { background: #feebc8; color: #c05621; }
+.resultado.idoso       { background: #e9d8fd; color: #553c9a; }
+
+.testes {
+  border-top: 2px solid #e2e8f0;
+  padding-top: 20px;
+}
+
+.testes h3 {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  margin-bottom: 12px;
+}
+
+th, td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th { color: #718096; font-weight: 600; }
+
+td:last-child { font-weight: 700; }
+
+.pass { color: #276749; }
+.fail { color: #c53030; }
+
+.btn-testes {
+  background: #718096;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+}
+
+.btn-testes:hover { background: #4a5568; }
+
+.hidden { display: none; }
