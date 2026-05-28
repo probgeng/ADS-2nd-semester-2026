@@ -12,6 +12,20 @@ Recebe as notas de uma turma e exibe relatório com aprovados, reprovados, zerad
 ### [sala-por-idade](./sala-por-idade)
 Identifica a sala de um participante com base na faixa etária. Inclui os testes planejados no modelo ULIFE com execução automática no navegador.
 
+## Java
+
+### [java/exercicios/Lista1_Basico](./java/exercicios/Lista1_Basico)
+Exercícios básicos de Java — cálculo de áreas (círculo, retângulo, triângulo), operações com salário, consumo de combustível, cálculo de idade e médias ponderadas.
+
+### [java/exercicios/Lista2_Condicionais](./java/exercicios/Lista2_Condicionais)
+Exercícios com estruturas condicionais — aprovação escolar, equação do 2º grau, classificação de triângulos, par ou ímpar, peso ideal, categorias de nadador e motociclista, maior/menor entre valores, menu de operações e ordenação crescente.
+
+### [java/exercicios/POO](./java/exercicios/POO)
+Exercícios de Programação Orientada a Objetos — modelagem de `Pessoa`, `Estudante`, `Professor` e `Turma` com herança e encapsulamento.
+
+### [java/faculdade3](./java/faculdade3)
+Projeto Maven com exercícios práticos — calculadora com switch-case, tabuada e exemplos de entrada/saída.
+
 ## Engenharia de Software
 
 ### [engenharia-de-software](./engenharia-de-software)
@@ -20,6 +34,7 @@ Respostas dos exercícios de Engenharia de Software — cobre fundamentos, model
 ## Tecnologias
 
 - HTML5 · CSS3 · JavaScript Vanilla
+- Java · Maven
 - Markdown
 
 ## Como usar
